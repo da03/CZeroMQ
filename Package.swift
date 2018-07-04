@@ -5,7 +5,7 @@ let package = Package(
     name: "CZeroMQ",
     pkgConfig: "libzmq",
     products: [
-        .library(name: "CZeroMQ", targets: ["CZeroMQ"]),
+        .library(name: "CZeroMQ", type: "static", targets: ["CZeroMQ"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
