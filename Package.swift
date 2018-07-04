@@ -6,7 +6,10 @@ let package = Package(
       products: [
         .library(name: "CZeroMQ", targets: ["CZeroMQ"]),
     ],
- 
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        // .package(url: /* package url */, from: "1.0.0"),
+    ],
     targets: [
         .target(
             name: "CZeroMQ",
